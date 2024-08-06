@@ -1,3 +1,10 @@
+/*
+ * @Author:Claire Li
+ * @Date:2024-08-06 22:25:25
+ * @LastEditors:Claire Li
+ * @LastEditTime:2024-08-06 23:20:19
+ * @Description:
+ */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
