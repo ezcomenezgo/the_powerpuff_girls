@@ -2,12 +2,13 @@
  * @Author:Claire Li
  * @Date:2024-08-06 22:25:25
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-06 23:20:19
+ * @LastEditTime:2024-08-07 22:54:49
  * @Description:
  */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/app/ui/nav-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <title>The Powerpuff Girls</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      {/* suppress hydration warnings caused by google extension */}
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
