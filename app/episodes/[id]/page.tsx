@@ -2,16 +2,15 @@
  * @Author:Claire Li
  * @Date:2024-08-06 22:23:15
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-06 22:36:29
+ * @LastEditTime:2024-08-07 01:39:49
  * @Description:
  */
 import { fetchEpisodeById } from "@/app/lib/data";
 import { Episode } from "@/app/lib/definitions"; 
 import Image from 'next/image';
 
-export default async function Page() {
-  const episode: Episode = await fetchEpisodeById(657308)
-  console.log('show:', episode);
+export default async function Page({ params }: { params: { id: string }}) {
+  const episode: Episode = await fetchEpisodeById(Number(params.id))
   return (
     <main>
       This is TV show page.
