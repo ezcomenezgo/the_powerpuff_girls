@@ -2,7 +2,7 @@
  * @Author:Claire Li
  * @Date:2024-08-07 19:32:34
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-08 01:14:15
+ * @LastEditTime:2024-08-08 23:12:34
  * @Description: Episodes list of a TV show component
  */
 'use client'
@@ -16,14 +16,13 @@ export default function EpisodesList({episodes}: {episodes: Episode[]}) {
   const episodesBySeasonsMap: Map<number, Episode[]> = groupEpisodesBySeason(episodesCopy);
   const [activeTab, setActiveTab] = useState(1);
 
-  const renderEpisodesBySeason = () => {
-    const episodes = episodesBySeasonsMap.get(activeTab);
-    return episodes?.map((episode) => {
+  const renderEpisodesBySeason = (episodesBySeasonsMap: Map<number, Episode[]>, activeTab: number) => {
+    const episodesBySeason = episodesBySeasonsMap.get(activeTab);
+    return episodesBySeason?.map((episode) => {
       return (
         <tbody key={episode.id}>
           <tr>
             <td>{episode.number}</td>
-            <td>{episode.airdate}</td>
             <td>
               <Link
                 href={`/episodes/${episode.id}`}
@@ -57,12 +56,11 @@ export default function EpisodesList({episodes}: {episodes: Episode[]}) {
       <table className="table">
         <thead>
           <tr>
-            <th>Number</th>
-            <th>Date</th>
+            <th>Episode</th>
             <th>Name</th>
           </tr>
         </thead>
-        {renderEpisodesBySeason()}
+        {renderEpisodesBySeason(episodesBySeasonsMap, activeTab)}
       </table>
     </section>
   )
