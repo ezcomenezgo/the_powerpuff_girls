@@ -2,7 +2,7 @@
  * @Author:Claire Li
  * @Date:2024-08-07 20:22:18
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-08 01:11:29
+ * @LastEditTime:2024-08-08 15:05:25
  * @Description: TV show info component
  */
 import { Show } from "@/app/lib/definitions";
@@ -15,14 +15,14 @@ export default function ShowInfo({show}: {show: Show}) {
       <div className="sm:flex">
         <div className="sm:flex">
           <Image 
-            src={show.image.original}
+            src={show.image?.original || ''}
             width={250}
             height={190}
             className="hidden md:block"
             alt="Show image showing desktop version"
           />
           <Image 
-            src={show.image.medium}
+            src={show.image?.medium || ''}
             width={125}
             height={95}
             className="block float-left mr-3 md:hidden"
