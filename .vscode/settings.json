@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "javascript.format.semicolons": "insert",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnPaste": true
+}
