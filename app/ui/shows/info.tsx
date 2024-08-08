@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-07 20:22:18
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-07 20:31:38
- * @Description:
+ * @LastEditTime:2024-08-08 01:11:29
+ * @Description: TV show info component
  */
 import { Show } from "@/app/lib/definitions";
 import Image from 'next/image';
@@ -39,7 +39,8 @@ export default function ShowInfo({show}: {show: Show}) {
           </p>
           <p className="w-full">
             Official site: 
-            <a href={show.officialSite ?? undefined} className=" block max-w-full text-blue-500 underline overflow-hidden">
+            <a href={show.officialSite ?? undefined} className=" 
+            block max-w-full text-blue-500 underline overflow-hidden">
               {show.officialSite ?? 'N/A'}
             </a>
           </p>

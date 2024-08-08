@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-07 20:04:39
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-07 23:11:58
- * @Description:
+ * @LastEditTime:2024-08-08 01:17:20
+ * @Description: Home page
  */
 import Link from 'next/link';
 

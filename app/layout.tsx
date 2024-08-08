@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-06 22:25:25
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-07 22:54:49
- * @Description:
+ * @LastEditTime:2024-08-08 01:16:57
+ * @Description: Main layout
  */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

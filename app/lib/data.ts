@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-06 21:11:18
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-06 23:03:09
- * @Description:
+ * @LastEditTime:2024-08-08 01:08:25
+ * @Description: Fetch data from APIs
  */
 import { Show, Episode } from "@/app/lib/definitions";
 

@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-06 21:10:00
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-07 20:36:59
- * @Description:
+ * @LastEditTime:2024-08-08 01:10:11
+ * @Description: Specific TV show introduction page
  */
 import { fetchShowById, fetchEpisodesByShowId } from "@/app/lib/data";
 import { Show, Episode } from "@/app/lib/definitions"; 

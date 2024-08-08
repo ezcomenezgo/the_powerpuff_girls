@@ -2,8 +2,8 @@
  * @Author:Claire Li
  * @Date:2024-08-07 22:50:49
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-07 23:13:24
- * @Description:
+ * @LastEditTime:2024-08-08 01:16:26
+ * @Description: Navbar component
  */
 import Link from 'next/link';
 
