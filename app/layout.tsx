@@ -2,7 +2,7 @@
  * @Author:Claire Li
  * @Date:2024-08-06 22:25:25
  * @LastEditors:Claire Li
- * @LastEditTime:2024-08-08 10:55:51
+ * @LastEditTime:2024-08-08 22:33:14
  * @Description: Main layout
  */
 import type { Metadata } from "next";
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="forest">
       <head>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       </head>

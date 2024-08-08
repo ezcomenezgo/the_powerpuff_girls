@@ -1,3 +1,10 @@
+/*
+ * @Author:Claire Li
+ * @Date:2024-08-06 21:07:07
+ * @LastEditors:Claire Li
+ * @LastEditTime:2024-08-08 22:32:28
+ * @Description: Tailwind config
+ */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -16,5 +23,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  daisyui: {
+    themes: ["forest"]
+  }
 };
 export default config;
